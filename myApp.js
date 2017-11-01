@@ -1,5 +1,5 @@
 var app = angular.module('Lipapp', []);
-var url = "http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick";
+var url = "https://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick";
 app.controller('LipController', function($scope, $http, $timeout) {
     $http.get(url).then(function(response) {
         $scope.datalip = response.data;
